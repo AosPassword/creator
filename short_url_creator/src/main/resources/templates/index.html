@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>获取短域名</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+<form class="form-signin" action="/creator" method="post">
+    <img class="mb-4" src="../../pass.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Start Create</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="text" id="inputEmail" class="form-control" placeholder="original URL" name="oUrl" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="text" id="inputPassword" class="form-control" placeholder="created URL" name="cUrl" required>
+
+    <select class="custom-select d-block w-100" id="state" required th:name="keepTime">
+        <option value="">Choose the keepTime</option>
+        <option th:value="${60*60*24}">1 day</option>
+        <option th:value="${60*60*24*30}">30 days</option>
+        <option th:value="${60*60*24*30*4}">120 days</option>
+        <option th:value="${60*60*24*30*4*3}">360 days</option>
+    </select>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+</form>
+</body>
+</html>

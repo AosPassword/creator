@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Finished</title>
+</head>
+<body>
+<h3 th:text="${result.message}"></h3>
+<h3 th:text="@{'原来的网址->'+${result.oUrl}}"></h3>
+<h3 th:text="@{'短网址->www.yangruixin.com/t/'+${result.cUrl}}"></h3>
+<h3 th:text="@{'到期时间->'+${result.outTime}}"></h3>
+</body>
+</html>
