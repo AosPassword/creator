@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: yrx990327
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://139.199.199.131:8080/firstbase
+#message-handler:
+#  time_out: time out
+#  unknown_error: unknown error,please tell the administrator about this bug
+#  oUrlisExist: the original URL is exist
+#  cUrlisExist: the URL what you created is exist
+#  success: success
+#  successMessage: URL created successfully
+#  oUrlisError: the URL what you send is error
+#  hashMethodOne: MD5
+#  hashMethodTwo: SHA1
+#  pattern: [a-zA-Z0-9][-a-zA-Z0-9]{0,62}(/.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+/.?
+#  error: error
+  redis:
+    host: 139.199.199.131
+    port: 6379
+
